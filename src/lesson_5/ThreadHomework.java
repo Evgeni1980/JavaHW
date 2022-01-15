@@ -48,7 +48,7 @@ public class ThreadHomework {
 
         Thread thread2 = new Thread(() -> {
             for (int i = 0; i < rightHalf.length; i++) {
-                rightHalf[i] = (float) (rightHalf[i] * Math.sin(0.2f + i/5) * Math.cos(0.2f + i/5) * Math.cos(0.4f + i/2));
+                rightHalf[i] = (float) (rightHalf[i] * Math.sin(0.2f + (i+h)/5) * Math.cos(0.2f + (i+h)/5) * Math.cos(0.4f + (i+h)/2));
             }
         });
 
